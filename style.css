@@ -1,0 +1,260 @@
+ :root{
+    --c1:#F8ECD1;
+   --c2:#DEB6AB;
+   --c3:#AC7D88;
+   --c4:#85586F;
+}
+*{
+    margin:0px;
+    padding:0px;
+   } 
+   body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+   
+
+header {
+    text-decoration: none;
+    color:black;
+    min-width: 120px; 
+}
+.navbar a{
+    text-decoration: none;
+    color:whitesmoke;
+    margin:2em;
+    
+}
+.navbar{
+    background-color: #AC7D88;
+    display:flex;
+    height: 50px;
+    justify-content: left;
+    align-items: center;
+
+}
+
+header{
+    display: flex;
+}
+.heading{
+    display:flex;
+    font-size: 2em;
+    align-items: center;
+     row-gap:1em; 
+    padding:0.25em; 
+    flex:3;
+ 
+}
+
+.icons{
+    text-decoration: none;
+    flex:2;
+    display:flex;
+    row-gap:1em;
+    align-items: center;
+
+}   
+
+#search-input {
+    flex:2;
+    border-radius: 10px;
+    width: 500px; 
+    height: 10px;
+    font-size: 16px; 
+    padding: 10px; 
+}
+#search-input::placeholder {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 18px; 
+}
+.icons a{
+    color: #AC7D88;
+    text-decoration: none;
+    flex:1;
+}
+ 
+
+.navbar a:hover{
+    color:black;
+}
+.landing{
+    background-image: url('media/hp.jpg') ;
+    background-size: cover;
+    background-position: center;
+    height:120vh;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height:90vh;
+    justify-content: center;
+    padding:3em;
+    /* margin:4em; */
+ }
+.tagline1{
+    color:#643843;
+    font-size:2.5em ;
+    font-weight:600 ;
+    height:2em;
+}
+.tagline2{
+    color:black;
+    font-size:1.1em ;  
+}
+.tagline2 p{
+    padding:7px;
+}
+.maintext button{
+    width: 25vw;
+    height:8vh;
+    margin: 2em;
+    background-color:#AC7D88;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 20px;
+    gap:20px;
+   } 
+   .skincare{
+    width: 29vw;
+    height: 320px;
+    border: 2px solid black;
+    background:url('media/haircare1.jpg') no-repeat center center/cover; 
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+    cursor: pointer;
+   }
+   .makeup{
+    width: 29vw;
+    height: 320px;
+    border: 2px solid black;
+    background:url('media/makeup.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+    cursor: pointer;
+   }
+   .haircare{
+    width: 30vw;
+    height: 320px;
+    border: 2px solid black;
+    background:url('media/sc/skincare.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content:center;
+    align-items:flex-end;
+    border-radius: 15px;
+   }
+   .fragrances{
+       width: 30vw;
+       height: 320px;
+       border: 2px solid black;
+       background:url('media/fragrance.jpg') no-repeat center center/cover;
+       display: flex;
+       justify-content:center;
+       align-items:flex-end;
+       border-radius: 15px;
+      }
+      .nailcare{
+       width: 30vw;
+       height: 320px;
+       border: 2px solid black;
+       background:url('media/nailcare.jpg') no-repeat center center/cover;
+       display: flex;
+       justify-content:center;
+       align-items:flex-end;
+       border-radius: 15px;
+      }
+      .bathandbody{
+       width: 30vw;
+       height: 320px;
+       border: 2px solid black;
+       background:url('media/bathandbody.jpg') no-repeat center center/cover;
+       display: flex;
+       justify-content:center;
+       align-items:flex-end;
+       border-radius: 15px;
+      }
+      .products1{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        margin: 20px;
+        gap:30px;
+       } 
+.products p{
+    font-weight: bolder;
+}
+.product{
+        background-color: whitesmoke;
+        padding: 10px;
+       display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        gap: 5px;
+       } 
+       .product h2{
+        color: var(--c4);
+        font-size: larger;
+        font-weight: bolder;
+       }
+       .product button{
+        padding:3px;
+        display:flex;
+        border-radius:5px;
+        cursor: pointer;
+       }
+       .cart,.wishlist{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       }
+       .cart h2,.wishlist h2{
+        background-color:#AC7D88;
+        width:100%;
+        display: flex;
+        justify-content: center;
+        color:black;
+        padding:7px;
+       }
+       #cart-items,#wishlist-items{
+        padding-top: 10px;
+        padding-bottom: 10px;
+       }
+       #order{
+        width: 10vw;
+        height:7vh;
+        margin: 2em;
+        background-color:;
+        border-radius: 10px;
+        font-size: larger;
+        font-weight: bolder;
+    }
+       
+       
+       #wishlist-items{
+        padding-top: 10px;
+        padding-bottom: 10px;
+       }
+
+
+header h2 i,nav a i{
+    margin-right: .5em; 
+}
+.footer{
+    grid-area: footer;
+    background-color: #203040;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
